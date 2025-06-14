@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Linking to an external CSS file for styling the webpage -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Title of the page, shown in the browser tab -->
+    <title>Login - FBS</title>
+</head>
+<body>
+    <!-- Wrapper div for containing the entire page's content -->
+    <div class="wrapper">
+
+        <!-- Container div for the header and navigation -->
+        <div class="container">
+            <!-- Header section containing the website logo and title -->
+            <header>
+                <!-- A table layout to position the logo and the website's title -->
+                <table width="100%" align="center" cellpadding="0" cellspacing="2">
+                    <tr>
+                        <!-- Table cell for displaying the logo image -->
+                        <th width="20%">
+                            <img src="fbs.png" alt="FBS LOGO" width="130" height="100"/>
+                        </th>
+                        <!-- Table cell for displaying the main title of the site -->
+                        <th colspan="4">
+                            <!-- Heading styled in white color -->
+                            <h1 style="color:white;">FBS - WORLD BEST ONLINE EBOOKS WEBSITE</h1>
+                        </th>
+                    </tr>
+                </table>
+            </header>
+
+            <!-- Navigation bar containing links to other pages -->
+            <nav>
+                <!-- Table used for creating navigation links -->
+                <table width="100%" align="center" cellpadding="0" cellspacing="2">
+                    <tbody align="center" style="font-weight:bold;font-size:18px;">
+                        <tr>
+                            <!-- Navigation links for Home, Login, Registration, and Cart -->
+                            <td width="20%"><hr><a href="index.html">Home</a><hr></td>
+                            <td width="20%"><hr><a href="login.html">Login</a><hr></td>
+                            <td width="20%"><hr><a href="registration.html">Registration</a><hr></td>
+                            <td width="20%"><hr><a href="cart.html">Cart</a><hr></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </nav>
+        </div>
+
+        <!-- Main content section of the page -->
+        <div class="container1">
+            <!-- Sidebar 1 (left sidebar, currently empty) -->
+            <div class="sidebar1"></div>
+
+            <!-- Main content area (center area) where the login form is displayed -->
+            <div class="container2">
+                <main>
+                    <!-- Centering the content using the <center> tag (deprecated but still used) -->
+                    <center>
+                        <!-- Heading for the login section -->
+                        <h3>Login Details</h3><br/>
+                        
+                        <!-- Form for submitting login details -->
+                        <form name="f1">
+                            <!-- Table used for organizing the form fields -->
+                            <table width="100%" align="center">
+                                <!-- Row for entering the username -->
+                                <tr>
+                                    <td>User Name:</td>
+                                    <!-- Text input field for the username -->
+                                    <td><input type="text" name="username"></td>
+                                </tr>
+
+                                <!-- Empty row for spacing -->
+                                <tr><td><br></td></tr>
+
+                                <!-- Row for entering the password -->
+                                <tr>
+                                    <td>Password:</td>
+                                    <!-- Password input field, text is hidden when typed -->
+                                    <td><input type="password" name="password"></td>
+                                </tr>
+
+                                <!-- Empty row for spacing -->
+                                <tr><td><br></td></tr>
+
+                                <!-- Row for submit and reset buttons -->
+                                <tr>
+                                    <td></td>
+                                    <!-- Submit button to submit the form -->
+                                    <td><input type="submit" value="SUBMIT">
+                                        <!-- Reset button to clear the form -->
+                                        <input type="reset" value="RESET"></td>
+                                </tr>
+                            </table>
+                        </form>
+                    </center>
+                </main>
+            </div>
+
+            <!-- Sidebar 2 (right sidebar, currently empty) -->
+            <div class="sidebar2"></div>
+        </div>
+
+        <!-- Footer section containing copyright information -->
+        <footer>
+            <!-- Copyright text styled in white -->
+            <font color="white">(C) 2024 All rights reserved by FBS ebooks</font>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Linking to an external CSS file for styling the webpage -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Title of the page, displayed in the browser tab -->
+    <title>Cart - FBS</title>
+</head>
+<body>
+    <!-- Wrapper div that contains the entire page -->
+    <div class="wrapper">
+        
+        <!-- Container div for the header and navigation -->
+        <div class="container">
+            <!-- Header section with the site logo and title -->
+            <header>
+                <!-- A table layout for the logo and website title -->
+                <table width="100%" align="center" cellpadding="0" cellspacing="2">
+                    <tr>
+                        <!-- Table cell for the website logo -->
+                        <th width="20%">
+                            <img src="fbs.png" alt="FBS LOGO" width="130" height="100"/>
+                        </th>
+                        <!-- Table cell for the website title -->
+                        <th colspan="4">
+                            <!-- Heading displaying the title of the website in white color -->
+                            <h1 style="color:white;">FBS - WORLD BEST ONLINE EBOOKS WEBSITE</h1>
+                        </th>
+                    </tr>
+                </table>
+            </header>
+
+            <!-- Navigation bar with links to different pages -->
+            <nav>
+                <!-- A table to create navigation links -->
+                <table width="100%" align="center" cellpadding="0" cellspacing="2">
+                    <tbody align="center" style="font-weight:bold;font-size:18px;">
+                        <tr>
+                            <!-- Navigation links for different pages (Home, Login, Registration, Cart) -->
+                            <td width="20%"><hr><a href="index.html">Home</a><hr></td>
+                            <td width="20%"><hr><a href="login.html">Login</a><hr></td>
+                            <td width="20%"><hr><a href="registration.html">Registration</a><hr></td>
+                            <td width="20%"><hr><a href="cart.html">Cart</a><hr></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </nav>
+        </div>
+
+        <!-- Main content container -->
+        <div class="container1">
+            <!-- Sidebar 1 (left sidebar, currently empty) -->
+            <div class="sidebar1"></div>
+
+            <!-- Main content area (center section) where the cart details are displayed -->
+            <div class="container2">
+                <main>
+                    <!-- Centering the content using the <center> tag (deprecated but still used) -->
+                    <center>
+                        <!-- Heading for the cart section -->
+                        <h3>Cart</h3>
+
+                        <!-- Table to display the items in the cart -->
+                        <table width="100%" align="center">
+                            <tbody>
+                                <!-- Table headers for Book Name, Price, Quantity, and Amount -->
+                                <tr>
+                                    <th width="40%"><hr>BookName<hr></th>
+                                    <th width="20%"><hr>Price<hr></th>
+                                    <th width="20%"><hr>Quantity<hr></th>
+                                    <th width="20%"><hr>Amount<hr></th>
+                                </tr>
+                            </tbody>
+                            <tbody align="center">
+                                <!-- Row for a book in the cart -->
+                                <tr>
+                                    <td>Java Programming</td>
+                                    <td>Rs. 2300/-</td>
+                                    <td>2</td>
+                                    <td>Rs. 4600/-</td>
+                                </tr>
+                                <!-- Row for another book in the cart -->
+                                <tr>
+                                    <td>Web Technologies</td>
+                                    <td>Rs. 3000/-</td>
+                                    <td>1</td>
+                                    <td>Rs. 3000/-</td>
+                                </tr>
+                                <!-- Total row for the cart -->
+                                <tr>
+                                    <td></td>
+                                    <td><hr><font color="#996600">Total Amount:</font><hr></td>
+                                    <td><hr>3<hr></td>
+                                    <td><hr>Rs. 7600/-<hr></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </center>
+                </main>
+            </div>
+
+            <!-- Sidebar 2 (right sidebar, currently empty) -->
+            <div class="sidebar2"></div>
+        </div>
+
+        <!-- Footer section containing copyright information -->
+        <footer>
+            <!-- Displaying the copyright text in white color -->
+            <font color="white">(C) 2024 All rights reserved by FBS ebooks</font>
+        </footer>
+    </div>
+</body>
+</html>

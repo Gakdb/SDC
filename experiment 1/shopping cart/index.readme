@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tag for character encoding (UTF-8) to support international characters -->
+    <meta charset="UTF-8">
+
+    <!-- Meta tag to make the page responsive for mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to an external CSS file for styling the webpage -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Title of the webpage (appears in the browser's tab) -->
+    <title>Home - FBS</title>
+</head>
+<body>
+    <!-- Wrapper div that contains all the content on the page -->
+    <div class="wrapper">
+
+        <!-- Header section, typically used for the logo and page title -->
+        <header>
+            <!-- Table used to layout the logo and title -->
+            <table width="100%" align="center" cellpadding="0" cellspacing="2">
+                <tr>
+                    <!-- Table cell for the logo image -->
+                    <th width="20%">
+                        <img src="fbs.png" alt="FBS Logo - The best online ebooks website" width="130" height="100" />
+                    </th>
+                    <!-- Table cell for the main title of the page -->
+                    <th colspan="4">
+                        <h1 style="color:white;">FBS - WORLD'S BEST ONLINE EBOOKS WEBSITE</h1>
+                    </th>
+                </tr>
+            </table>
+        </header>
+
+        <!-- Navigation section (links to other pages of the site) -->
+        <nav>
+            <!-- Table used for organizing navigation links -->
+            <table width="100%" align="center" cellpadding="0" cellspacing="2">
+                <tbody align="center" style="font-weight:bold;font-size:18px;">
+                    <tr>
+                        <!-- Navigation link for the Home page -->
+                        <td width="20%"><hr><a href="index.html">Home</a><hr></td>
+                        <!-- Navigation link for the Login page -->
+                        <td width="20%"><hr><a href="login.html">Login</a><hr></td>
+                        <!-- Navigation link for the Registration page -->
+                        <td width="20%"><hr><a href="registration.html">Registration</a><hr></td>
+                        <!-- Navigation link for the Cart page -->
+                        <td width="20%"><hr><a href="cart.html">Cart</a><hr></td>
+                    </tr>
+                </tbody>
+            </table>
+        </nav>
+
+        <!-- Main content area -->
+        <div class="container">
+            <!-- Sidebar 1 (can be used for additional content like advertisements or categories) -->
+            <div class="sidebar1"></div>
+
+            <!-- Main content area, where the page's primary content is displayed -->
+            <div class="main-content">
+                <!-- The main content area -->
+                <main>
+                    <!-- Centered content (using the <center> tag) -->
+                    <center>
+                        <!-- A secondary heading for welcoming users -->
+                        <h2>Welcome to FBS e-Book's Website</h2>
+
+                        <!-- A paragraph describing the benefits of shopping on the site -->
+                        <p>
+                            Shopping at <span class="highlight-text">FBS</span> can be both <span class="highlight-text">fun</span>
+                            and <span class="highlight-text">savings</span>.</br>
+                            Shop with us in this special <span class="highlight-text">discount</span> season and save up to
+                            <span class="highlight-text">90%</span> on all your purchases.
+                        </p>
+                    </center>
+                </main>
+            </div>
+
+            <!-- Sidebar 2 (another area for additional content or links) -->
+            <div class="sidebar2"></div>
+        </div>
+
+        <!-- Footer section containing copyright information -->
+        <footer>
+            <!-- Copyright text, styled to be white -->
+            <p><font color="white">(C) 2024 All rights reserved by FBS ebooks</font></p>
+        </footer>
+    </div>
+</body>
+</html>

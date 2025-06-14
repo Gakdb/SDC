@@ -1,0 +1,78 @@
+/* This sets the base font for the body of the page to be monospace */
+body {
+  font-family: monospace;
+}
+
+/* Styles for the main content area */
+main {
+  background-color: #efefef;  /* Light grey background color */
+  color: #330000;             /* Dark red text color */
+  margin-left: 10px;          /* Add a 10px margin to the left */
+  height: 60vh;               /* Set the height of the main content to 60% of the viewport height */
+}
+
+/* Styles for header and footer sections */
+header, footer {
+  background-color: #000d57;  /* Dark blue background color */
+  color: #fff;                /* White text color */
+  padding: 1rem;              /* Add padding of 1rem around the content */
+  height: 50px;               /* Set the height to 50px */
+}
+
+/* Adjust margin between header and navigation */
+header, nav {
+  margin-bottom: 10px;         /* Add 10px margin to the bottom of header and navigation */
+  flex-basis: 50%;             /* These sections will take up 50% of the available space */
+}
+
+/* Footer has a margin on top for spacing */
+footer {
+  margin-top: 10px;            /* Add 10px margin to the top of the footer */
+}
+
+/* Styles for the navigation bar */
+nav {
+  background-color: #fff;     /* White background color for navigation */
+  color: #000;                /* Black text color */
+  padding: 1rem;              /* Add 1rem padding around the navigation links */
+  height: 20px;               /* Set the height of the navigation bar to 20px */
+}
+
+/* Styles for both sidebars (left and right) */
+.sidebar1, .sidebar2 {
+  flex-basis: 10%;             /* Each sidebar will take up 10% of the available space */
+  background-color: #fff;     /* White background color */
+  color: #000;                /* Black text color */
+}
+
+/* Margin on the left of the second sidebar to create space */
+.sidebar2 {
+  margin-left: 10px;           /* Add a 10px margin to the left of sidebar2 */
+}
+
+/* Container holding the main content and sidebars, uses Flexbox layout */
+.container1 {
+  display: flex;               /* Enable Flexbox for the container */
+}
+
+/* Container for the main content area, arranged vertically */
+.container2 {
+  display: flex;               /* Enable Flexbox for the container */
+  flex-direction: column;      /* Arrange the content in a column direction */
+  flex: 1;                     /* Allow this section to take up all the available space */
+}
+
+/* Apply flex properties to all these sections for center alignment */
+header, nav, main, .sidebar1, .sidebar2, footer {
+  display: flex;               /* Enable Flexbox for these elements */
+  align-items: center;         /* Vertically align the content to the center */
+  justify-content: center;     /* Horizontally align the content to the center */
+  border-radius: 10px;         /* Apply rounded corners with a radius of 10px */
+}
+
+/* The wrapper container holds the entire layout */
+.wrapper {
+  display: flex;               /* Enable Flexbox for the wrapper */
+  flex-direction: column;      /* Arrange the contents vertically (header, nav, main, etc.) */
+  font-weight: 600;             /* Set a font weight of 600 (semi-bold text) */
+}

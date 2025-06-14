@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Defines character encoding for proper text display -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes the website responsive on mobile devices -->
+    <title>Registration - FBS</title> <!-- Title of the page displayed in the browser tab -->
+
+    <!-- Linking Bootstrap CSS for pre-designed styling and responsive layout -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* Set background color for the entire page */
+        body {
+            background-color: #f4f4f4;
+        }
+
+        /* Styling for the footer */
+        footer {
+            background-color: #333; /* Dark background for visibility */
+            color: white; /* White text for contrast */
+            text-align: center; /* Centers the footer text */
+            padding: 10px; /* Adds spacing inside the footer */
+            position: fixed; /* Fixes footer at the bottom */
+            bottom: 0; /* Positions the footer at the bottom of the screen */
+            width: 100%; /* Makes the footer full width */
+        }
+
+        /* Wrapper for adding top margin */
+        .wrapper {
+            margin-top: 20px;
+        }
+
+        /* Styling for the registration form container */
+        .form-container {
+            background-color: white; /* White background for the form */
+            padding: 40px; /* Adds space inside the form */
+            border-radius: 5px; /* Rounds the corners of the form */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for a modern look */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <!-- Header Section -->
+        <div class="container">
+            <header class="my-4"> <!-- Adds top and bottom margin for spacing -->
+                <div class="row"> <!-- Bootstrap row for layout -->
+                    <!-- Left section for the logo -->
+                    <div class="col-3">
+                        <img src="fbs.png" alt="FBS LOGO" class="img-fluid" width="130" height="100"/>
+                    </div>
+                    <!-- Right section for website title -->
+                    <div class="col-9 text-center bg-dark p-3">
+                        <h1 class="text-white">FBS - WORLD BEST ONLINE EBOOKS WEBSITE</h1>
+                    </div>
+                </div>
+            </header>
+        </div>
+
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> <!-- Bootstrap responsive navbar -->
+            <div class="container">
+                <ul class="navbar-nav mx-auto"> <!-- Centering the navigation menu -->
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="registration.html">Registration</a></li> <!-- Current active page -->
+                    <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Registration Form -->
+        <div class="container my-5"> <!-- Adds margin around the form -->
+            <div class="form-container mx-auto col-md-6"> <!-- Centering the form and limiting width -->
+                <h3 class="text-center mb-4">Registration</h3> <!-- Form title -->
+
+                <!-- Registration form (POST method for security) -->
+                <form action="registration-process.php" method="post">
+                    
+                    <!-- Username Field -->
+                    <div class="form-group">
+                        <label for="username">User Name</label> <!-- Label for the input field -->
+                        <input type="text" class="form-control" id="username" name="username" required> <!-- Input field with validation -->
+                    </div>
+
+                    <!-- Password Field -->
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" name="password" required>
+                    </div>
+
+                    <!-- Email Field -->
+                    <div class="form-group">
+                        <label for="email">Email ID</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+
+                    <!-- Phone Number Field -->
+                    <div class="form-group">
+                        <label for="phno">Phone Number</label>
+                        <input type="text" class="form-control" id="phno" name="phno" required>
+                    </div>
+
+                    <!-- Gender Selection (Radio Buttons) -->
+                    <div class="form-group">
+                        <label>Gender</label>
+                        <div>
+                            <input type="radio" name="gen" value="Male" required> Male
+                            <input type="radio" name="gen" value="Female"> Female
+                        </div>
+                    </div>
+
+                    <!-- Language Selection (Checkboxes) -->
+                    <div class="form-group">
+                        <label>Language Known</label>
+                        <div>
+                            <input type="checkbox" name="lang" value="English"> English<br>
+                            <input type="checkbox" name="lang" value="Hindi"> Hindi<br>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn btn-primary btn-block">Register</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Footer Section -->
+        <footer>
+            <p>(C) 2024 All rights reserved by FBS ebooks</p>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JavaScript (Required for Bootstrap interactive features) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> <!-- jQuery for Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script> <!-- Popper.js for positioning tooltips -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> <!-- Bootstrap JavaScript -->
+
+</body>
+</html>
